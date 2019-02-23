@@ -24,13 +24,13 @@ class App extends Component {
     score: 0,
     topScore: 0,
     result: "",
-    clickedChar: []
+    clicked: []
   };
 
   handleClick = id => {
     if (this.state.clicked.indexOf(id) === -1) {
       this.handleIncrement();
-      this.setState({ clicked: this.state.clicked.concat(id) })
+      this.setState({ clicked: this.state.clicked.concat(id) });
     } else {
       this.handleReset();
     }
@@ -54,9 +54,9 @@ class App extends Component {
   handleReset = () => {
     this.setState({
       score: 0,
-      topScore: 0,
-      result: "Glaven",
-      clickedChar: []
+      topScore: this.state.topScore,
+      result: "Boohoooo",
+      clicked: []
     })
     this.handleShuffle();
   };
@@ -73,6 +73,7 @@ class App extends Component {
       <Wrapper>
         <Navbar
           title="Clicky Game"
+          sub="Street Fighter Edition"
           score={this.state.score}
           topScore={this.state.topScore}
           result={this.state.result}

@@ -1,12 +1,13 @@
 //sets up the reusable Navbar component
-import React, { Component } from "react";
-import "./Navbar.css";
+import React from "react";
+import "./style.css";
 
-const Navbar = props => {
+const Navbar = props => (
   <nav>
     <ul>
       <li className="brand animated lightSpeedIn">
         <a href="/clicky-game/">{props.title}</a>
+        <p id='sub'>{props.sub}</p>
       </li>
 
       <li id="result">{props.result}</li>
@@ -16,7 +17,7 @@ const Navbar = props => {
       <li id="top-score">Top Score: {props.topScore}</li>
     </ul>
   </nav>
-};
+);
 
 
 export default Navbar;
