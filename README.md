@@ -1,11 +1,11 @@
-# BAMAZON-Webe-SUSHI-app
+#Clicky Game - Street Fighter edition!
 
 ## Brief App description
 
 This app is a memory game with React. This project required me to break up my application's UI into components, manage component state, and respond to user events.
 
 Try the game here: https://evening-hamlet-61362.herokuapp.com/
-<img src="https://imgur.com/SmWmNag" width="400px">
+<img src="https://i.imgur.com/SmWmNag.jpg" width="400px">
 
 
 ## Technologies Used:
