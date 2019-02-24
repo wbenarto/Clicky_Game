@@ -4,18 +4,21 @@ import "./style.css";
 
 const Navbar = props => (
   <nav>
+
     <ul>
       <li className="brand animated lightSpeedIn">
         <a href="/clicky-game/">{props.title}</a>
-        <p id='sub'>{props.sub}</p>
+        <h1 id="edition">{props.sub}</h1>
       </li>
-
+     
       <li id="result">{props.result}</li>
 
       <li id="score">Current Score: {props.score}</li>
 
       <li id="top-score">Top Score: {props.topScore}</li>
     </ul>
+
+    <p id="sub">{props.direction}</p>
   </nav>
 );
 

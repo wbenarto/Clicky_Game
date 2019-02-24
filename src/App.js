@@ -2,12 +2,10 @@ import React, { Component } from "react";
 import Navbar from "./components/Navbar";
 import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
 import Container from "./Container";
 import Row from "./Row";
 import Column from "./Column";
 import friends from "./friends.json";
-import "./App.css";
 
 const shuffleFriends = (array) => {
   for (let i = array.length - 1; i > 0; i--) {
@@ -55,7 +53,7 @@ class App extends Component {
     this.setState({
       score: 0,
       topScore: this.state.topScore,
-      result: "Boohoooo",
+      result: "Not bad, try again.",
       clicked: []
     })
     this.handleShuffle();
@@ -74,14 +72,12 @@ class App extends Component {
         <Navbar
           title="Clicky Game"
           sub="Street Fighter Edition"
+          direction="Click on every character but don't hit them twice. Get all 12 and you win!"
           score={this.state.score}
           topScore={this.state.topScore}
           result={this.state.result}
         />
-        <Title>
-          You click and don't click the same image. Simple?
-        </Title>
-
+      
         <Container>
           <Row>
             {this.state.friends.map(friend => (
@@ -94,7 +90,6 @@ class App extends Component {
                   handleShuffle={this.handleShuffle}
                   id={friend.id}
                   image={friend.image}
-                  name={friend.name}
                 />
               </Column>
             ))}

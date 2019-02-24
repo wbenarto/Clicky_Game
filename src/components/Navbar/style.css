@@ -3,23 +3,28 @@ nav {
   font-size: 3rem;
   color: #fff;
   margin-bottom: 50px;
-  background-color: rgb(56, 56, 56, 0.5);
+  background-color: rgb(56, 56, 56, 0.4);
   height: auto;
-  font-family: 'Bungee', cursive;
+  font-family: 'Vampiro One', cursive;
 }
+
 
 a {
-  color: #fed420;
+  color: #bd3422;
+  font-family: 'Marcellus SC', serif;
+  font-size: 50px;
+  margin: auto;margin-left: 20px;
 }
 
+
 a:hover {
-  color: #fed420;
+  color: #bd3422;
   text-decoration: none;
 }
 
 nav li {
   display: inline-block;
-  padding: 26px 0;
+  padding: 10px 0;
   width: 25%;
   /* text-align: center; */
 }
@@ -30,11 +35,24 @@ ul {
   align-items: center;
 }
 
+/* Street Fighter */
+h1#edition {
+  color: #ffffff;
+  font-family: 'Metal Mania', cursive;
+  font-size: 60px;
+  
+}
+
+/* Direction */
 p#sub {
   font-size: 35px;
-  font-family: 'Vampiro One', cursive;
+  font-family: 'Bungee Inline', cursive;
   color: white;
+  vertical-align: middle;
+  margin-bottom: 15px;
+  text-align: center;
 }
+
 @media only screen and (max-width: 750px) {
   #cur-sco, #top-sco {
     font-size: 2rem;
