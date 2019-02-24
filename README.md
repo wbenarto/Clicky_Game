@@ -1,4 +1,4 @@
-##Clicky Game - Street Fighter edition!
+## Clicky Game - Street Fighter edition!
 
 ## Brief App description
 
